@@ -6,13 +6,15 @@ public class RevEachword {
 
 	public static void main(String[] args) {
 		 Scanner sc=new Scanner(System.in);
-		    System.out.println("enter a string:");
-		    String str=sc.next();
-		    String reverse="";
-		    for(int i=str.length()-1;i>=0;i--) {
-		    	reverse+=str.charAt(i); 
+		    String str="My name is";
+		    String[] words=str.split(" ");
+		    for(String word:words) {
+		    	for(int i=word.length()-1;i>=0;i--) {
+		    		System.out.print(word.charAt(i));
 		    	}
-		    System.out.println(reverse);
+		    
+		    }
+		    
 	} 
 }
 
